@@ -5,8 +5,6 @@ class Kunal{
         System.out.println("Your name is: "+ name + "\nYour Roll Number is: "+ rollno);
     }
 }
-
-
 public class Oops {
     public static void main(String[] args) {
         Kunal kk = new Kunal();
