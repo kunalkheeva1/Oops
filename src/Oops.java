@@ -1,22 +1,21 @@
-class Kunal{
+class Student{
     String name;
-    int rollno;
-    Kunal(String name, int rollno){
-        this.name = name;
-        this.rollno = rollno;
-        System.out.println("Your name is: "+ name + "\nYour Roll Number is: "+ rollno);
+    int age;
+    public void name(String name){
+        System.out.println(name);
     }
-    Kunal(Kunal call){
-        System.out.println("When copy constructor is called!!");
-
+    public void age(){
+        System.out.println(age);
     }
-
+    public void name(String name, int age){
+        System.out.println(age + " "+ name);
+    }
 }
+
 public class Oops {
     public static void main(String[] args) {
-    Kunal kk = new Kunal("Kunal",21);
-    Kunal nn= new Kunal(kk);
-
+    Student kk = new Student();
+    kk.name("Kunal", 21);
 
     }
 }
